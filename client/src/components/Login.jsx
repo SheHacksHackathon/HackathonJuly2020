@@ -1,25 +1,62 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import Button from './Button'
+class Login extends Component {
 
-export default function Login() {
- const handleSubmit = (e) => {
-  e.preventDefault()
-  alert('submit test')
+ state = {
+  username: "",
+  password: ""
  }
- return (
-  <div>
-   <form>
-    <input
-     type="text"
-     name=""
-     id=""
-     placeholder="username"
-    />
-    <Button
-     handleClick={handleSubmit}
-     buttonText="test button"
-    />
-   </form>
-  </div>
- )
+
+ handleChange = (e) => {
+  const { name, value } = e.target;
+  this.setState({
+   [name]: value
+  })
+ }
+
+ handleSubmit = (e) => {
+  e.preventDefault()
+  // this.props.handleLoginSubmit(this.state)
+  alert('test submit')
+  this.setState({
+   username: "",
+   password: ""
+  })
+  this.props.history.push('/')
+ }
+
+ render() {
+  return (
+   <div className="Login">
+    <h2>Login</h2>
+    <form
+     onSubmit={this.handleSubmit}
+     className="login-form"
+    >
+
+     <input
+      type="text"
+      name="username"
+      value={this.state.username}
+      onChange={this.handleChange}
+      placeholder="username"
+     />
+     <input
+      type="password"
+      name="password"
+      value={this.state.password}
+      onChange={this.handleChange}
+      placeholder="password"
+     />
+     <Button
+      // handleClick={this.handleSubmit}
+      buttonText="LOGIN"
+     />
+
+    </form>
+   </div>
+  )
+ }
 }
+export default withRouter(Login)
