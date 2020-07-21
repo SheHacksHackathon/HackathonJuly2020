@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :gathers
+  resources :venues
   resources :users
   resources :tickets
   resources :events
