@@ -13,6 +13,17 @@ class User < ApplicationRecord
       id: id,
       username: username,
       email: email,
+      fname: fname,
+      lname: lname,
+      company: company,
+      addr1: addr1,
+      addr2: addr2,
+      city: city,
+      state: state,
+      zip: zip,
+      phone: phone,
+      level: level,
+      permission: permission,
       created_at: created_at,
       updated_at: updated_at
     }
