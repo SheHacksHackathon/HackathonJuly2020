@@ -1,0 +1,23 @@
+rails db:create
+------------------
+Created database 'hackathon_july_2020_development'
+Created database 'hackathon_july_2020_test'
+
+
+==================
+
+
+rails g scaffold Location name addr1 addr2 city state zip contact phone email
+
+rails g scaffold Event event_start:datetime event_end:datetime event_name:string host_name:string event_desc:text location_detail:text location:references
+
+rails g scaffold User username fname lname company addr1 addr2 city state zip phone email level permission password_digest:string
+
+rails g scaffold Ticket event_date:date event_time:string purchase_date:date purchase_price:decimal scan_code section aisle seat event:references user:references
+
+
+
+ 
+
+
+
