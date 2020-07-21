@@ -1,8 +1,8 @@
 class CreateGathers < ActiveRecord::Migration[6.0]
   def change
     create_table :gathers do |t|
-      t.datetime :event_start
-      t.datetime :event_end
+      t.string :event_start
+      t.string :event_end
       t.string :event_name
       t.string :host_name
       t.text :event_desc
