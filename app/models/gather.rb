@@ -1,4 +1,4 @@
 class Gather < ApplicationRecord
   belongs_to :venue
-  has_many :ticket
+  # has_many :ticket
 end
