@@ -7,13 +7,15 @@ export default class Homepage extends Component {
   return (
    <div className="Homepage">
     {/* <h1>App Name Placeholder</h1> */}
-   Hello {
-     this.props.currentUser
-      ?
-      this.props.currentUser.username
-      :
-      'Guest'
-    }!<br />
+    <div className="welcome-msg">
+     Hello {
+      this.props.currentUser
+       ?
+       this.props.currentUser.username
+       :
+       'Guest'
+     }!
+   </div>
     {
      this.props.currentUser
       ?
