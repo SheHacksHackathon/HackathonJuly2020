@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import Button from './Button'
 class Register extends Component {
  state = {
@@ -26,27 +26,33 @@ class Register extends Component {
 
  render() {
   return (
-   <div className="SignUp">
-    <h2>Sign Up</h2>
+   <div className="Register">
+    <h2>
+     <Link to="/"><span>←</span></Link>
+     Register
+     </h2>
     <form
      onSubmit={this.handleSubmit}
-     className="sign-up-form"
+     className="register-form"
     >
-
+     <label htmlFor="username">Username
      <input
-      type="text"
-      name="username"
-      value={this.state.username}
-      onChange={this.handleChange}
-      placeholder="username"
-     />
-     <input
-      type="password"
-      name="password"
-      value={this.state.password}
-      onChange={this.handleChange}
-      placeholder="password"
-     />
+       type="text"
+       name="username"
+       value={this.state.username}
+       onChange={this.handleChange}
+       placeholder="Enter Username"
+      />
+     </label>
+     <label htmlFor="password">Password
+      <input
+       type="password"
+       name="password"
+       value={this.state.password}
+       onChange={this.handleChange}
+       placeholder="Enter Password"
+      />
+     </label>
      <Button
       // handleClick={this.handleSubmit}
       buttonText="REGISTER"
