@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   
   get '/ticket', to: 'tickets#get_tickets'
   

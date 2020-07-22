@@ -1,6 +1,7 @@
 class TicketsController < ApplicationController
   before_action :set_ticket, only: [:show, :update, :destroy]
 
+
   # GET /tickets
   def index
     @tickets = Ticket.all
