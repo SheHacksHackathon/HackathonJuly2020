@@ -13,7 +13,7 @@ rails g scaffold Event event_start:datetime event_end:datetime event_name:string
 
 rails g scaffold User username fname lname company addr1 addr2 city state zip phone email level permission password_digest:string
 
-rails g scaffold Ticket event_date:date event_time:string purchase_date:date purchase_price:decimal scan_code section aisle seat event:references user:references
+rails g scaffold Ticket event_date:string event_time:string purchase_date:date purchase_price:decimal scan_code section aisle seat event:references user:references
 
 
 

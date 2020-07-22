@@ -1,6 +1,7 @@
 class TicketsController < ApplicationController
   before_action :set_ticket, only: [:show, :update, :destroy]
 
+
   # GET /tickets
   def index
     @tickets = Ticket.all
@@ -11,6 +12,12 @@ class TicketsController < ApplicationController
   # GET /tickets/1
   def show
     render json: @ticket
+  end
+
+  def get_tickets
+    # @user = 38
+    @guess_tickets = Ticket.where(user_id: 38).all
+    render json: @guess_tickets
   end
 
   # POST /tickets
