@@ -5,6 +5,7 @@ import { Link, Route, withRouter } from 'react-router-dom'
 import Register from './components/Register';
 import Test from './components/Test';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
+import Homepage from './components/Homepage';
 
 class App extends Component {
 
@@ -46,29 +47,10 @@ class App extends Component {
 
    <div className="App">
     <Route exact path="/">
-     <div className="homepage">
-      <h1>App Name Placeholder</h1>
-      Welcome, {
-       this.state.currentUser
-        ?
-        this.state.currentUser.username
-        :
-        'Guest'
-      }<br />
-      {
-       this.state.currentUser
-        ?
-        <>
-         <Link to='#' onClick={this.handleLogout}>Logout</Link>
-        </>
-        :
-        <>
-         <Link to="/login">Login</Link><br />
-         <Link to="/register">Register</Link><br />
-         <Link to="/test">test</Link>
-        </>
-      }
-     </div>
+     <Homepage
+      currentUser={this.state.currentUser}
+      handleLogout={this.handleLogout}
+     />
     </Route>
     <Route exact path="/login">
      <Login

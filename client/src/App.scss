@@ -55,3 +55,19 @@
   }
  }
 }
+
+.Homepage {
+ background-color: lightgrey;
+}
+
+.EventList {
+ background-color: white;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+ height: calc(100vh - 5em);
+ position: absolute;
+ bottom: 0px;
+ width: 100vw;
+ padding: 1em;
+ overflow: auto;
+}
