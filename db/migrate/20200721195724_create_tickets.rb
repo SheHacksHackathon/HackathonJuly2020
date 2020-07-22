@@ -5,6 +5,8 @@ class CreateTickets < ActiveRecord::Migration[6.0]
       t.string :event_time
       t.string :purchase_date
       t.decimal :purchase_price
+      t.string :fname
+      t.string :lname
       t.string :scan_code
       t.string :section
       t.string :aisle

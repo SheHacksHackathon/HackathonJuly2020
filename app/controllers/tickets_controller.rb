@@ -14,12 +14,10 @@ class TicketsController < ApplicationController
     render json: @ticket
   end
 
-  def get_user_ticket
-    # @user=@current_user
-    # @user_ticket = Ticket.find()
-    @user_ticket = Ticket.where("user_id=current_user")
-    # @user_ticket = Ticket.find(params[:id])
-    render json: @user_ticket
+  def get_tickets
+    # @user = 38
+    @guess_tickets = Ticket.where(user_id: 38).all
+    render json: @guess_tickets
   end
 
   # POST /tickets
