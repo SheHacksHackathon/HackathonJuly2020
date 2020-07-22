@@ -16,7 +16,8 @@ class TicketsController < ApplicationController
 
   def get_tickets
     # @user = 38
-    @guess_tickets = Ticket.where(user_id: 38).all
+    @guess_tickets = Ticket.where(user_id: params[:id]).all
+    # @guess_tickets = Ticket.where(user_id: 38).all
     render json: @guess_tickets
   end
 
