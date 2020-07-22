@@ -8,10 +8,14 @@ import Test from './components/Test';
 function App() {
  return (
   <div className="App">
-   <h1>App Name Placeholder</h1>
-   <Link to="/login">Login</Link><br />
-   <Link to="/register">Register</Link><br />
-   <Link to="/test">test</Link>
+   <Route exact path="/">
+    <div className="homepage">
+     <h1>App Name Placeholder</h1>
+     <Link to="/login">Login</Link><br />
+     <Link to="/register">Register</Link><br />
+     <Link to="/test">test</Link>
+    </div>
+   </Route>
    <Route exact path="/login">
     <Login />
    </Route>
