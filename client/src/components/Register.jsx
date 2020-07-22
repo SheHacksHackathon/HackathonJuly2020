@@ -16,7 +16,7 @@ class Register extends Component {
 
  handleSubmit = (e) => {
   e.preventDefault()
-  // this.props.handleRegisterSubmit(this.state)
+  this.props.handleRegisterSubmit(this.state)
   this.setState({
    username: "",
    password: ""
