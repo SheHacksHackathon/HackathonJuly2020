@@ -48,9 +48,26 @@ class App extends Component {
     <Route exact path="/">
      <div className="homepage">
       <h1>App Name Placeholder</h1>
-      <Link to="/login">Login</Link><br />
-      <Link to="/register">Register</Link><br />
-      <Link to="/test">test</Link>
+      Welcome, {
+       this.state.currentUser
+        ?
+        this.state.currentUser.username
+        :
+        'Guest'
+      }<br />
+      {
+       this.state.currentUser
+        ?
+        <>
+         <Link to='#' onClick={this.handleLogout}>Logout</Link>
+        </>
+        :
+        <>
+         <Link to="/login">Login</Link><br />
+         <Link to="/register">Register</Link><br />
+         <Link to="/test">test</Link>
+        </>
+      }
      </div>
     </Route>
     <Route exact path="/login">
