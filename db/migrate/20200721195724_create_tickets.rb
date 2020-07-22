@@ -11,6 +11,8 @@ class CreateTickets < ActiveRecord::Migration[6.0]
       t.string :section
       t.string :aisle
       t.string :seat
+      t.string :check_in
+      t.string :check_out
       t.references :gather, null: false, foreign_key: true
       t.references :user, null: false, foreign_key: true
 
