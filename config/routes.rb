@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   
-  get '/ticket/:id', to: 'tickets#get_tickets'
+  get '/tickets/:id', to: 'tickets#get_tickets'
   
   resources :gathers
   resources :venues
