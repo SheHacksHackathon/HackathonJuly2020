@@ -2,11 +2,32 @@
  min-height: 100vh;
 }
 
-.Button {
+.Button,
+.RoundedBlock {
  border-radius: 1em;
  padding: 1em;
  border: none;
+ display: flex;
+ align-items: center;
 }
+
+.CircleBlock {
+ border-radius: 50%;
+ height: 3em;
+ width: 3em;
+ border: none;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: 0.5em;
+ font-size: 80%;
+}
+
+.RoundedBlock {
+ display: flex;
+ justify-content: space-between;
+}
+
 .Login,
 .Register {
  padding: 0.5em 1.5em;
@@ -52,6 +73,51 @@
   .Button {
    color: white;
    background-color: black;
+  }
+ }
+}
+
+.Homepage {
+ background-color: slategrey;
+ color: white;
+
+ .welcome-msg {
+  padding: 1em 1rem 0.5em 1rem;
+  font-size: 1.5em;
+ }
+ a {
+  color: inherit;
+  margin: 0.2em 1rem;
+ }
+}
+
+.EventList {
+ background-color: white;
+ color: black;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+ height: calc(100vh - 7em);
+ position: absolute;
+ bottom: 0px;
+ width: 100vw;
+ padding: 1em;
+ overflow: auto;
+ h2 {
+  margin: 0 0 0.5em 0;
+  border-bottom: 1px solid lightgrey;
+  font-size: 1em;
+  font-weight: normal;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+ }
+ > .RoundedBlock {
+  background-color: lightgrey;
+  margin-bottom: 1.5em;
+  font-size: 0.7em;
+  padding: 0 0 0 1em;
+  .CircleBlock {
+   padding: 0.2em;
+   background-color: #fff;
   }
  }
 }
