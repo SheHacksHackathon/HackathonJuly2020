@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Login from './components/Login';
-import { Link, Route, withRouter } from 'react-router-dom'
+import { Route, withRouter } from 'react-router-dom'
 import Register from './components/Register';
-import Test from './components/Test';
+import TicketView from './components/TicketView';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth'
 import Homepage from './components/Homepage';
 
@@ -63,8 +63,8 @@ class App extends Component {
       handleRegisterSubmit={this.handleRegisterSubmit}
      />
     </Route>
-    <Route exact path="/test">
-     <Test />
+    <Route exact path="/ticketview">
+     <TicketView />
     </Route>
    </div>
   )

@@ -138,5 +138,38 @@
   color: black;
   font-size: 0.8em;
   height: 2.5em;
+  text-transform: uppercase;
+  img {
+   height: 1em;
+   width: auto;
+   margin-right: 0.5em;
+  }
+ }
+}
+
+.TicketView {
+ background-color: grey;
+ padding: 1em;
+ .RoundedBlock {
+  padding: 4em;
+  font-size: 0.7em;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .ticket-name,
+  .ticket-type {
+   font-weight: bold;
+  }
+  .date-time {
+   margin-top: 1em;
+   font-size: 0.8em;
+  }
+  .qr-code {
+   width: 100%;
+   margin: 3em auto;
+  }
  }
 }
