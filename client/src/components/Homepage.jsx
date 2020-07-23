@@ -23,15 +23,15 @@ export default class Homepage extends Component {
     {
      this.props.currentUser
       ?
-      <>
+      <div className="links">
        <Link to='#' onClick={this.props.handleLogout}>Logout</Link>
-      </>
+      </div>
       :
-      <>
+      <div className="links">
        <Link to="/login">Login</Link><br />
        <Link to="/register">Register</Link><br />
-       <Link to="/test">test</Link>
-      </>
+       {/* <Link to="/test">test</Link> */}
+      </div>
     }
     {this.props.currentUser && <EventList />}
     {this.props.currentUser && <Footer>
