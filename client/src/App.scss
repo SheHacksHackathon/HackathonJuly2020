@@ -151,25 +151,45 @@
  background-color: grey;
  padding: 1em;
  .RoundedBlock {
+  width: 100%;
   padding: 4em;
   font-size: 0.7em;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  .ticket-name,
-  .ticket-type {
-   font-weight: bold;
-  }
-  .date-time {
-   margin-top: 1em;
-   font-size: 0.8em;
-  }
-  .qr-code {
+  .children {
    width: 100%;
-   margin: 3em auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   .ticket-name,
+   .ticket-type {
+    font-weight: bold;
+   }
+   .date-time {
+    margin-top: 1em;
+    font-size: 0.8em;
+   }
+   .ticket-cutout {
+    //
+   }
+   .qr-code {
+    width: 100%;
+    img {
+     width: 100%;
+     margin: 3em auto 2em;
+    }
+   }
+   .instructions {
+    font-size: 0.8em;
+   }
+   .apple-wallet {
+    margin-top: 1em;
+    width: 100%;
+    img {
+     width: 60%;
+    }
+   }
   }
  }
 }
