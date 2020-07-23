@@ -35,13 +35,15 @@ export default class Homepage extends Component {
     }
     {this.props.currentUser && <EventList />}
     {this.props.currentUser && <Footer>
+     <Link to="/ticketview">
+      <RoundedBlock
+       text="Ticket"
+       img={QrCodeIcon}
+       alt="qr code"
+      />
+     </Link>
      <RoundedBlock
-      text="test"
-      img={QrCodeIcon}
-      alt="qr code"
-     />
-     <RoundedBlock
-      text="longer test"
+      text="Scan To Pay"
       img={CreditCardIcon}
       alt="credit card"
      />
