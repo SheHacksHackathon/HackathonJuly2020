@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import EventList from './EventList'
+import Footer from './Footer'
+import RoundedBlock from './RoundedBlock'
+import QrCodeIcon from '../assets/qr-code-icon.png'
+import CreditCardIcon from '../assets/credit-card-icon.png'
 
 export default class Homepage extends Component {
  render() {
@@ -15,7 +19,7 @@ export default class Homepage extends Component {
        :
        'Guest'
      }!
-   </div>
+    </div>
     {
      this.props.currentUser
       ?
@@ -30,6 +34,18 @@ export default class Homepage extends Component {
       </>
     }
     {this.props.currentUser && <EventList />}
+    {this.props.currentUser && <Footer>
+     <RoundedBlock
+      text="test"
+      img={QrCodeIcon}
+      alt="qr code"
+     />
+     <RoundedBlock
+      text="longer test"
+      img={CreditCardIcon}
+      alt="credit card"
+     />
+    </Footer>}
    </div>
   )
  }

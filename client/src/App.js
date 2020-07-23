@@ -23,6 +23,7 @@ class App extends Component {
  }
 
  handleRegisterSubmit = async (registerData) => {
+  console.log(registerData)
   const currentUser = await registerUser(registerData)
   this.setState({ currentUser })
  }

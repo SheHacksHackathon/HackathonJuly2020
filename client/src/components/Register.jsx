@@ -18,6 +18,7 @@ class Register extends Component {
   e.preventDefault()
   this.props.handleRegisterSubmit(this.state)
   this.setState({
+   email: "",
    username: "",
    password: ""
   })
@@ -35,6 +36,15 @@ class Register extends Component {
      onSubmit={this.handleSubmit}
      className="register-form"
     >
+     <label htmlFor="email">Email
+     <input
+       type="email"
+       name="email"
+       value={this.state.email}
+       onChange={this.handleChange}
+       placeholder="Enter Email"
+      />
+     </label>
      <label htmlFor="username">Username
      <input
        type="text"
