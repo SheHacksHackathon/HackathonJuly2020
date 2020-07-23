@@ -96,9 +96,9 @@
  color: black;
  border-top-left-radius: 30px;
  border-top-right-radius: 30px;
- height: calc(100vh - 7em);
+ height: calc(100vh - 10em);
  position: absolute;
- bottom: 0px;
+ bottom: 3em;
  width: 100vw;
  padding: 1em;
  overflow: auto;
@@ -117,7 +117,26 @@
   padding: 0 0 0 1em;
   .CircleBlock {
    padding: 0.2em;
-   background-color: #fff;
+   background-color: white;
   }
+ }
+}
+
+.Footer {
+ height: 3em;
+ position: absolute;
+ bottom: 0;
+ background-color: grey;
+ width: 100vw;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0.2em 0.4em;
+ .RoundedBlock {
+  background-color: white;
+  color: black;
+  font-size: 0.8em;
+  height: 2.5em;
  }
 }
