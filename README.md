@@ -4,25 +4,11 @@
 
 Frontend - React
 </br>
-Frontend Deployment - Netlify
-</br>
-
-
-### Client Directory
-
-![ClientDirectory](./readmeDoc/client_directory.png)
-</br></br>
 
 ### Component Heirarchy
 
-![Components](./readmeDoc/components.png)
+![Components](./assets/SheHacks-hackathon-componentschart.png)
 </br></br>
-
-### Component Breakdown
-
-| Component      | Type       | State | Props | Description                                                                                            |
-| -------------- | ---------- | ----- | ----- | ------------------------------------------------------------------------------------------------------ |
-|                                                    |
 
 ## Server
 
