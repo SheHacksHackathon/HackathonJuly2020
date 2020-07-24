@@ -130,8 +130,10 @@
 
 .Footer {
  height: 3em;
- position: absolute;
+ position: fixed;
  bottom: 0;
+ left: 0;
+ right: 0;
  background-color: grey;
  width: 100vw;
  display: flex;
@@ -159,7 +161,7 @@
 .TicketView {
  background-color: grey;
  padding: 1em;
- .RoundedBlock {
+ > .RoundedBlock {
   width: 100%;
   padding: 4em;
   font-size: 0.7em;
@@ -178,15 +180,37 @@
    .date-time {
     margin-top: 1em;
     font-size: 0.8em;
+    .spacer {
+     margin: 0 0.2em;
+    }
    }
    .ticket-cutout {
-    //
+    height: 3em;
+    width: 100vw;
+    position: relative;
+    &:before,
+    &:after {
+     display: block;
+     position: absolute;
+     top: 0px;
+     background-color: grey;
+     height: 3em;
+     width: 3em;
+     content: "";
+     border-radius: 50%;
+    }
+    &:before {
+     left: 0px;
+    }
+    &:after {
+     right: 0px;
+    }
    }
    .qr-code {
     width: 100%;
     img {
      width: 100%;
-     margin: 3em auto 2em;
+     margin: 0 auto 2em;
     }
    }
    .instructions {

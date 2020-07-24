@@ -64,7 +64,9 @@ class App extends Component {
      />
     </Route>
     <Route exact path="/ticketview">
-     <TicketView />
+     <TicketView
+      currentUser={this.state.currentUser}
+     />
     </Route>
    </div>
   )
