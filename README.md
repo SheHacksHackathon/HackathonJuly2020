@@ -1,24 +1,59 @@
-# README
+# DESIGN
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Client
 
-Things you may want to cover:
+Frontend - React
+</br>
+Frontend Deployment - Netlify
+</br>
 
-* Ruby version
 
-* System dependencies
+### Client Directory
 
-* Configuration
+![ClientDirectory](./readmeDoc/client_directory.png)
+</br></br>
 
-* Database creation
+### Component Heirarchy
 
-* Database initialization
+![Components](./readmeDoc/components.png)
+</br></br>
 
-* How to run the test suite
+### Component Breakdown
 
-* Services (job queues, cache servers, search engines, etc.)
+| Component      | Type       | State | Props | Description                                                                                            |
+| -------------- | ---------- | ----- | ----- | ------------------------------------------------------------------------------------------------------ |
+|                                                    |
 
-* Deployment instructions
+## Server
 
-* ...
+Back End: The Server will be developed using Rails
+
+### ERD Model
+
+![ERD Model](./assets/hackathon.png)
+
+### Data Heirarchy
+
+#### API Endpoints:
+
+./Home/
+</br>
+./Home/auth/login
+</br>
+./Home/verify
+</br>
+./Home/tickets/:id
+
+
+### Dependencies
+
+| Library          | Purpose           |
+| -----------------| ----------------- |
+| React            | Render Front End  |
+| React Router     | Link and Route    |
+| axios            | API calls         |
+| node-sass        | CSS               |
+| react-router-dom | router            |
+| react-scripts    | Smooth transition |
+| CORS             | Render Front End  |
+| Rails            | Back End Server   |

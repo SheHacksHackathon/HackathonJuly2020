@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_date: 2020-07-21
+  event_time: MyString
+  purchase_date: 2020-07-21
+  purchase_price: 9.99
+  scan_code: MyString
+  section: MyString
+  aisle: MyString
+  seat: MyString
+  gather: one
+  user: one
+
+two:
+  event_date: 2020-07-21
+  event_time: MyString
+  purchase_date: 2020-07-21
+  purchase_price: 9.99
+  scan_code: MyString
+  section: MyString
+  aisle: MyString
+  seat: MyString
+  gather: two
+  user: two
