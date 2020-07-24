@@ -10,7 +10,8 @@ import Footer from './Footer'
 export default function TicketView(props) {
  return (
   <div className="TicketView">
-   <RoundedBlock>
+   <div className="back-bar"><Link className="back" to="/">&lt;</Link><span className="title">VIP Pass</span></div>
+   <RoundedBlock className="ticket">
     <div className="ticket-name">MasterCard Super Bowl</div>
     <div className="ticket-type">VIP Pass</div>
     <div className="date-time">

@@ -134,18 +134,19 @@
  bottom: 0;
  left: 0;
  right: 0;
- background-color: grey;
+ background-color: white;
  width: 100vw;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
  align-items: center;
  padding: 0.2em 0.4em;
+ border-top: 1px solid lightgrey;
  a {
   text-decoration: none;
  }
  .RoundedBlock {
-  background-color: white;
+  background-color: lightgrey;
   color: black;
   font-size: 0.7em;
   height: 2.5em;
@@ -161,11 +162,33 @@
 .TicketView {
  background-color: grey;
  padding: 1em;
+ .back-bar {
+  margin: 0;
+  padding: 0.5em;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid lightgrey;
+  a {
+   color: inherit;
+   text-decoration: none;
+   position: absolute;
+   left: 0.5em;
+  }
+  span {
+   text-align: center;
+   display: block;
+  }
+ }
  > .RoundedBlock {
   width: 100%;
   padding: 4em;
   font-size: 0.7em;
   background-color: white;
+  margin-top: 3em;
+  margin-bottom: 4em;
   .children {
    width: 100%;
    display: flex;
